@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> HTML5 Lab 2 </title>
+    <meta name ="viewport" content="width=
+    device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    p {
+        font-size: 3vmin;
+    }
+    #left, #right { 
+    width: 48%;
+    padding: 5px;}
+    #left {
+        float: left;
+    }
+    #right {
+        float: right;
+    }
+       @media only screen and (max-width: 540px)
+       {#title
+         {display: none;}
+        #banana
+           {display: none;}
+           #left, #right { 
+           width: 100%;
+           padding: 0px;
+           float: none;}
+        }
+       @media only screen and (min-width: 541px)
+       {#header, #footer
+           {display: none;}
+       }
+       #footer{
+       position: fixed;
+       left: 0px;
+       bottom: 0px;
+       width: 100%;
+       } 
+   </style>
+</head>
+<body>
+    <div data-role="page" >
+    <div id="header" data-role="header">
+        <h1>Lorem Ipsum</h1></div>
+    <div data-role="main">
+        <h1 id="title"> I'm a responsive title!</h1>  
+        <div id="left">
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+            tempor incididunt ut labore et..
+        <img src="https://www.kizoa.com/img/e8nZC.gif"
+             alt="" width="10%" align="center"
+             id="banana"</p>
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+        tempor incididunt ut labore et..</p>
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+        tempor incididunt ut labore et..</p>
+        </div>
+         <div id="right">
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+        tempor incididunt ut labore et..
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+        tempor incididunt ut labore et..</p>
+        <p><strong>Lorem Ipsum </strong>
+        dolor sit amet,consectetur ad ipiscing elit,sed do eiusmod
+        tempor incididunt ut labore et..</p>
+        </div></div>
+    <div id="footer" data-role="footer">
+        <h1>Lab 1</h1></div>
+    </div>
+</body>
+</html>
